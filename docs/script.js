@@ -76,7 +76,7 @@ document.getElementById('trackerForm').addEventListener('submit', async function
 
 
     try {
-        const response = await fetch('http://localhost:8080/api/v1/subscriptions/track', {
+        const response = await fetch('https://campsite-availability-engine.onrender.com/api/v1/subscriptions/track', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json' 
