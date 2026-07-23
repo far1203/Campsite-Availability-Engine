@@ -2,14 +2,13 @@
 
 Application that monitors campsite availability and sends email alerts when reserved campsites become available.
 
-# Features
+## Features
 
-Track campsites by campground, state, campsite number, and date
-Background scheduler checks availability every 5 minutes
-Sends email notifications when cancellations are detected
-Stores subscriptions using PostgreSQL
-REST API built with Spring Boot
+- Track campsites by campground, state, campsite number, and date
+- Background scheduler checks availability every 5 minutes
+- Sends email notifications when cancellations are detected
+- Stores subscriptions using PostgreSQL
+- REST API built with Spring Boot
 
-# API:
-
-Recreation.gov API
+**APIs**
+- Recreation.gov API
