@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Departure Mono';
+    src: url('fonts/DepartureMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+body {
+    background-image: url('images/camp-background.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;     
+    background-attachment: fixed;  
+    font-family: 'Departure Mono', monospace;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* Creates a smooth shadow gradient from the edges inward */
+    background: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+    pointer-events: none; /* Allows users to click buttons through this layer */
+    z-index: 1; /* Keeps it on top of the image but behind content */
+}
+
+.site-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  
+}
+
+.pixel-input {
+    font-family: 'Departure Mono', monospace;
+    width: 100%;
+    padding: 5px 5px;
+
+    font-size: 16px;
+    color: #FAF0E6;
+
+    background: #e39565;
+    border: 2px solid #ede4dc;
+    border-radius: 12px;
+
+    transition: all 0.2s ease;
+}
+
+.pixel-input::placeholder {
+    color: #D8C3B2;
+    font-family: 'Departure Mono', monospace;
+}
+
+.pixel-input:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(114, 84, 196, 0.25);
+}
+
+
+
+.site-header {
+    color: 	#e4fcf8;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+    
+
+}
+
+.subheader {
+    color: rgb(6, 40, 112);
+    text-shadow: 0 2px 6px rgb(255, 255, 255);
+    font-size: 20px;
+
+    
+}
+
+.result-message {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+input[type="submit"] {
+    font-family: 'Departure Mono', monospace;
+    font-size: 16px;
+
+    color: #FAF0E6;
+    background: #365009;
+
+    border: 2px solid #EDE4DC;
+    border-radius: 12px;
+
+    padding: 10px 20px;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+    margin-left:25px
+}
+
+input[type="submit"]:hover {
+    background: #9C6A43;
+    transform: translateY(-1px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+.input-labels {
+    color: white;
+    text-shadow: 0 2px 6px rgb(1, 26, 29);
+}
+
+
+
+

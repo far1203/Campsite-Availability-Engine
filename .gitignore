@@ -1,0 +1,12 @@
+# Java build files
+backend/target/
+
+# IntelliJ files
+.idea/
+*.iml
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
